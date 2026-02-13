@@ -3,24 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luciana Martins</title>
     <script src="https://cdn.tailwindcss.com"></script> <!--Posterioemnte, pesquisar mais sobre a ferramenta Tailwind-->
+    <link rel="shortcut icon" href="imagens/lm.jpg" type="image/jpg">
 </head>
-<body class="bg-[#D7BDA6]">
-    <div class="max-w-lg mx-auto mt-20 px-6">
 
+<body class="bg-[#D7BDA6]">
+    <!--Esse style é para o cursor de digitação piscar mais rápido-->
+    <style>
+        @keyframes piscar {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .cursor-rapido {
+            animation: piscar 0.8s infinite; /* 0.8s é a velocidade (quanto menor, mais rápido) */
+        }
+    </style>
+
+    <div class="text-center max-w-lg mx-auto mt-20">
     <img
-    src="perfil.jpg"
+    src="imagens/perfil.jpg"
     alt="Foto de Luciana Martins"
     class="w-32 h-32 rounded-full mx-auto border-4 border-[#6D3914] mb-6 object-cover object-top"
     >
-    <h1 class="text-4xl font-bold text-[#4C2B08] text-center mb-2 mt-10"> Luciana Martins
+    
+    <p class="text-lg md:text-xl text-[#6D3914] font-medium mb-2 font-mono"> Oi! Eu sou a</p>
+    <h1 class="text-4xl sm:text-5xl font-bold text-[#4C2B08] mb-6 tracking-tight"> Luciana Martins :) <span class="text-[#6D3914] cursor-rapido">|</span>
     </h1>
     <p class="text-xl text-[#6D3914] text-center mb-8"> Analista de Sistemas & Desenvolvedora
     </p>
 
     <a href="https://www.linkedin.com.br" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> LinkedIn </a>
         <a href="https://github.com/LucianaMartins0" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> GitHub </a>
+
+        <div class="mt-10 animate-bounce">
+            <svg class="w-8 h-8 mx-auto text-[#6D3914]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
         </div>
+    
+    </div>
+    
+            <div class="max-w-8xl mx-auto mt-20 mb-20 px-6 text-left font-bold text-2xl">
+    
+    <h2 class="text-2xl font-bold text-[#4C2B08] mb-8 uppercase tracking-widest text-left">
+        Sobre mim:
+    </h2>
+<!-- Aqui inicia o bloco sobre mim-->
+    <div class="flex flex-col md:flex-row items-start gap-12">
+        
+        <div class="w-full md:w-2/3 text-[#6D3914] text-lg leading-relaxed">
+            
+            <p class="mb-6">
+                Sou recém-graduada em Análise e Desenvolvimento de Sistemas, com experiência prática construindo soluções em projetos acadêmicos desafiadores.
+            </p>
+
+            <p class="mb-6">
+                Valorizo a lógica de programação acima de qualquer sintaxe. Acredito que, com uma base sólida, qualquer linguagem nova é apenas uma ferramenta a ser dominada para resolver problemas.
+            </p>
+
+            <p class="mb-6">
+                Sonhadora e viajante 🌎. Percebi que sair da zona de conforto, às vezes, é o que nos faz acordar e desperta uma vontade ainda maior de buscar nossos sonhos.
+            </p>
+
+            <p class="font-bold">
+                Em 2026, busco iniciar minha jornada profissional, aplicando minha curiosidade constante para gerar valor real.
+            </p>
+        </div>
+
+        <div class="w-full md:w-[450px] shrink-0">
+            <img 
+                src="imagens/lu.jpg" 
+                alt="Luciana viajando" 
+                class="w-full h-auto rounded-lg shadow-lg object-cover border-4 border-[#6D3914]"
+            > 
+        </div>
+
+    </div> <!-- encerra o bloco sobre mim-->
+</div>
+
+<!-- Aqui inicia o bloco minha expêriencia-->
+ <div class="max-w6xl mx-auto mb-20 px-6">
+
+    <h2 class="text-2xl font-bold text-[#4C2B08] uppercase tracking-widest text-left">
+        Minhas Experiências:
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-10">
+        <ul class="flex flex-col md:w-1/4">
+            <li class="px-6 py-4 cursor-pointer border-l-4 border-[#6D3914] bg-[#eaddcf] text-[#4C2B08] font-bold transition-all"> Teste 1 </li>
+
+            <li class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> Teste 2 </li>
+
+            <li class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> Teste 3 </li>
+        </ul>
+        <div class="flex-1 text-[#6D3914]">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-[#4C2B08]">
+                    Líder de Projeto e Desenvolvedora
+
+                    <span class="text-[#6D3914] text-lg block md:inline md:ml-2">@xxxxxxxx
+                    </span>
+                </h3>
+
+                <p class="text-sm mt-2 font-semibold opacity-80"> OUT 20xx ATÉ xxxx 20xx </p>
+            </div>
+
+            <ul class="space-y-4 text-lg leading-relaxed">
+                <li class="flex items-start">
+                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
+                    Liderei a implementação de xxxxxxxxxxxx...
+                </li>
+
+                <li class="flex items-start">
+                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
+                    Desenvolvi o XXXXXXXXXXX...
+                </li>
+
+                <li class="flex items-start">
+                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
+                    Trabalhei com metodologias xxxxxxxxxxxxx...
+                </li>
+            </ul>
+        </div>
+    </div>
+
+ </div>
+
+ <!-- Aqui inicia o Rodapé-->
+  <footer class="text-center text-sm text-[#6D3914] mt-20 mb-10 font-bold opacity-80"> Criado por Luciana Soares Martins usando XXXXXXXX. <br> © Todos os direitos reservados.
+  </footer>
 </body>
 </html>
