@@ -20,12 +20,13 @@
         }
     </style>
 
+    <div class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative pb-40">
+
     <div class="text-center max-w-lg mx-auto mt-20">
     <img
     src="imagens/perfil.jpg"
     alt="Foto de Luciana Martins"
-    class="w-32 h-32 rounded-full mx-auto border-4 border-[#6D3914] mb-6 object-cover object-top"
-    >
+    class="w-32 h-32 rounded-full mx-auto border-4 border-[#6D3914] mb-6 object-cover object-top">
     
     <p class="text-lg md:text-xl text-[#6D3914] font-medium mb-2 font-mono"> Oi! Eu sou a</p>
     <h1 class="text-4xl sm:text-5xl font-bold text-[#4C2B08] mb-6 tracking-tight"> Luciana Martins :) <span class="text-[#6D3914] cursor-rapido">|</span>
@@ -33,15 +34,17 @@
     <p class="text-xl text-[#6D3914] text-center mb-8"> Analista de Sistemas & Desenvolvedora
     </p>
 
-    <a href="https://www.linkedin.com.br" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> LinkedIn </a>
-        <a href="https://github.com/LucianaMartins0" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> GitHub </a>
+    <a href="https://www.linkedin.com/in/luciana-soares-martins-884566242/" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> LinkedIn </a>
+    <a href="https://github.com/LucianaMartins0" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> GitHub </a>
+    <a href="https://www.instagram.com/luluciana5/" class="bg-[#6D3914] text-white p-4 block text-center rounded-xl hover:bg-[#4C2B08] mb-4 shadow-lg"> Instagram</a>
 
         <div class="mt-10 animate-bounce">
             <svg class="w-8 h-8 mx-auto text-[#6D3914]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
         </div>
-    
+    </div>
+
     </div>
     
             <div class="max-w-8xl mx-auto mt-20 mb-20 px-6 text-left font-bold text-2xl">
@@ -49,7 +52,7 @@
     <h2 class="text-2xl font-bold text-[#4C2B08] mb-8 uppercase tracking-widest text-left">
         Sobre mim:
     </h2>
-<!-- Aqui inicia o bloco sobre mim-->
+    <!-- Aqui inicia o bloco sobre mim-->
     <div class="flex flex-col md:flex-row items-start gap-12">
         
         <div class="w-full md:w-2/3 text-[#6D3914] text-lg leading-relaxed">
@@ -84,54 +87,175 @@
 
 <!-- Aqui inicia o bloco minha expêriencia-->
  <div class="max-w6xl mx-auto mb-20 px-6">
-
     <h2 class="text-2xl font-bold text-[#4C2B08] uppercase tracking-widest text-left">
         Minhas Experiências:
     </h2>
 
     <div class="flex flex-col md:flex-row gap-10">
-        <ul class="flex flex-col md:w-1/4">
-            <li class="px-6 py-4 cursor-pointer border-l-4 border-[#6D3914] bg-[#eaddcf] text-[#4C2B08] font-bold transition-all"> Teste 1 </li>
+        <ul class="flex flex-col md:w-1/4" id=lista-experiencias>
+            <li id="tab-0" onclick="mudarTab(0)" class="px-6 py-4 cursor-pointer border-l-4 border-[#6D3914] bg-[#eaddcf] text-[#4C2B08] font-bold transition-all"> 
+                VIVO TELEFÔNICA </li>
 
-            <li class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> Teste 2 </li>
+            <li id="tab-1" onclick="mudarTab(1)" class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> 
+                AXIO 3D </li>
 
-            <li class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> Teste 3 </li>
+            <li id="tab-2" onclick="mudarTab(2)" class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all"> 
+                ECO COLETA </li>
+
+            <li id="tab-3" onclick="mudarTab(3)" class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all">
+                TRAJETÓRIA  </li>
+
+            <li id="tab-4" onclick="mudarTab(4)" class="px-6 py-4 cursor-pointer border-l-4 border-transparent text-[#6D3914] hover:bg-[#eaddcf] hover:text-[#4C2B08] transition-all">
+                FORMAÇÃO  </li>
         </ul>
-        <div class="flex-1 text-[#6D3914]">
-            <div class="mb-6">
-                <h3 class="text-2xl font-bold text-[#4C2B08]">
-                    Líder de Projeto e Desenvolvedora
 
-                    <span class="text-[#6D3914] text-lg block md:inline md:ml-2">@xxxxxxxx
-                    </span>
-                </h3>
-
-                <p class="text-sm mt-2 font-semibold opacity-80"> OUT 20xx ATÉ xxxx 20xx </p>
+        <div class="flex-1 text-[#6D3914]" id="conteudo-experiencias">
+            <!-- Parte apenas da Vivo-->
+            <div id="content-0" class="block">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-[#4C2B08]">
+                        Suporte Técnico ao Cliente via Aplicativo Vivo
+                        <span class="text-[#6D3914] text-lg block md:inline md:ml-2">@Vivo (Telefônica)</span>
+                    </h3>
+                    <p class="text-sm mt-2 font-semibold opacity-80">JUN 2024 - O MOMENTO</p>
+                </div>
+                <ul class="space-y-4 text-lg leading-relaxed">
+                    <li class="flex items-start">
+                        <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                         Diagnóstico remoto de problemas técnicos de conectividade e sistemas.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                        Comunicação técnica clara e resolução ágil de incidentes sob pressão.
+                    </li>
+                </ul>
             </div>
-
-            <ul class="space-y-4 text-lg leading-relaxed">
-                <li class="flex items-start">
-                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
-                    Liderei a implementação de xxxxxxxxxxxx...
-                </li>
-
-                <li class="flex items-start">
-                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
-                    Desenvolvi o XXXXXXXXXXX...
-                </li>
-
-                <li class="flex items-start">
-                    <span class="text-[#4C2B08] mr-2 font-bold">▸</span>
-                    Trabalhei com metodologias xxxxxxxxxxxxx...
-                </li>
-            </ul>
-        </div>
-    </div>
-
- </div>
+            <!-- Parte apenas da Axio3D-->
+            <div id="content-1" class="hidden">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold text-[#4C2B08]">
+                        Fundadora e Gestora
+                        <span class="text-[#6D3914] text-lg block md:inline md:ml-2">@Axio3D</span>
+                    </h3>
+                    <p class="text-sm mt-2 font-semibold opacity-80">MAR 2025 - O MOMENTO</p>
+                </div>
+                <ul class="space-y-4 text-lg leading-relaxed">
+                    <li class="flex items-start">
+                        <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                        Gestão de e-commerce e loja especializada em impressão 3D.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                        Transformação de arquivos digitais em peças físicas através da impressão 3D.
+                    </li>
+                </ul>
+            </div>
+            <!-- Parte apenas de um dos projetos-->
+            <div id="content-2" class="hidden">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-[#4C2B08]">
+                            Líder de Projeto
+                            <span class="text-[#6D3914] text-lg block md:inline md:ml-2">PROJETO ACADÊMICO</span>
+                        </h3>
+                        <p class="text-sm mt-2 font-semibold opacity-80">OUT 2025 - NOV 2025</p>
+                    </div>
+                    <ul class="space-y-4 text-lg leading-relaxed">
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            Desenvolvimento de marketplace para conectar pontos de coleta de resíduos a descartes ecológicos.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            Implementação de cadastro de entidades, mapa interativo e filtros por tipo de resíduo.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            Aplicação prática de Full Stack (Node.js no Back-end e Web/Mobile no Front-end). Com documentação técnica disponível no README do meu GitHub.
+                        </li>
+                    </ul>                  
+            </div>
+        <div id="content-3" class="hidden">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-[#4C2B08]">
+                            Histórico Profissional
+                            <span class="text-[#6D3914] text-lg block md:inline md:ml-2"> Brasil & Portugal</span>
+                        </h3>
+                        <p class="text-sm mt-2 font-semibold opacity-80">DURANTE OS ANOS</p>
+                    </div>
+                    <ul class="space-y-4 text-lg leading-relaxed">
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            <span class="font-bold">Experiência Internacional: </span>Atuação em Portugal (2023), desenvolvendo adaptabilidade cultural e inglês prático. Experiência como balconista de restaurante.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            <span class="font-bold">Negociação: </span> Recuperadora de Crédito, com foco total em metas e persuasão.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            <span class="font-bold">Varejo: </span>2 anos na Drogasil, reforçando trabalho em equipe e atendimento.
+                        </li>
+                    </ul>
+                </div>
+                <div id="content-4" class="hidden">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-[#4C2B08]">
+                            Análise e Desenv. de Sistemas
+                            <span class="text-[#6D3914] text-lg block md:inline md:ml-2"> UNIFOR</span>
+                        </h3>
+                        <p class="text-sm mt-2 font-semibold opacity-80">GRADUAÇÃO CONCLUÍDA</p>
+                    </div>
+                    <ul class="space-y-4 text-lg leading-relaxed">
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            Sólida base em Engenharia de Software e Banco de Dados.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-[#4C2B08] mr-2 font-bold text-xl">▸</span>
+                            Experiência acadêmica com Java, Python e Web.
+                        </li>
+                    </ul>
+                </div>
+</div> </div> </div> </div>
 
  <!-- Aqui inicia o Rodapé-->
   <footer class="text-center text-sm text-[#6D3914] mt-20 mb-10 font-bold opacity-80"> Criado por Luciana Soares Martins usando XXXXXXXX. <br> © Todos os direitos reservados.
   </footer>
+
+ <!-- Aqui inicia o Js-->
+  <script>
+        // Função que recebe o número do botão clicado (0, 1, 2, 3 ou 4)
+        function mudarTab(index) {
+            
+            // PASSO 1: O APAGÃO (Esconder tudo)
+            // Pega todos os textos de conteúdo
+            const todosConteudos = document.querySelectorAll('[id^="content-"]');
+            // Pega todos os botões do menu
+            const todosBotoes = document.querySelectorAll('[id^="tab-"]');
+            // Passa por cada conteúdo e diz: "Fique invisível!" (Adiciona 'hidden')
+            todosConteudos.forEach(div => {
+                div.classList.add('hidden');
+            });
+
+            // Passa por cada botão e diz: "Fique transparente!" (Remove a cor bege)
+            todosBotoes.forEach(li => {
+                li.classList.remove('border-[#6D3914]', 'bg-[#eaddcf]', 'font-bold', 'text-[#4C2B08]');
+                li.classList.add('border-transparent', 'text-[#6D3914]');
+            });
+
+            // PASSO 2: A REVELAÇÃO (Mostrar só o escolhido)
+            
+            // Pega o texto que tem o número que você clicou
+            const conteudoParaMostrar = document.getElementById(`content-${index}`);
+            // Tira a capa de invisibilidade dele
+            conteudoParaMostrar.classList.remove('hidden');
+
+            // Pega o botão que você clicou
+            const botaoParaAcender = document.getElementById(`tab-${index}`);
+            // Pinta ele de bege e coloca a borda marrom
+            botaoParaAcender.classList.remove('border-transparent', 'text-[#6D3914]');
+            botaoParaAcender.classList.add('border-[#6D3914]', 'bg-[#eaddcf]', 'font-bold', 'text-[#4C2B08]');
+        }
+    </script>
 </body>
 </html>
