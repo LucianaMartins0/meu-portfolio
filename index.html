@@ -226,27 +226,27 @@
     <h2 class="text-3xl font-bold text-[#4C2B08] mb-4">Vamos conversar?</h2>
     <p class="text-[#6D3914] mb-8">Estou aberta a oportunidades para atuar como Analista de Sistemas e Desenvolvedora. Preencha o formulário abaixo.</p>
 
-    <form class="space-y-6">
+    <form action="https://formspree.io/f/mdekoawa" method="POST" class="space-y-6">
         <!-- Gaveta do Nome -->
         <div>
             <label class="block text-sm text-[#6D3914] mb-2 uppercase font-semibold">Nome</label>
-            <input type="text" placeholder="O seu nome" class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]">
+            <input type="text" name="Nome" placeholder="O seu nome" class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]">
         </div>
 
         <!-- Gaveta do Email -->
         <div>
             <label class="block text-sm text-[#6D3914] mb-2 uppercase font-semibold">Email</label>
-            <input type="email" placeholder="email@exemplo.com" class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]">
+            <input type="email" name="Email" placeholder="email@exemplo.com" class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]">
         </div>
 
         <!-- Gaveta da Mensagem -->
         <div>
             <label class="block text-sm text-[#6D3914] mb-2 uppercase font-semibold">Mensagem</label>
-            <textarea rows="4" placeholder="Conte-me mais sobre o que tem em mente..." class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]"></textarea>
+            <textarea rows="4" name="Mensagem" placeholder="Conte-me mais sobre o que tem em mente..." class="w-full p-3 bg-transparent border border-[#6D3914] rounded text-[#4C2B08]"></textarea>
         </div>
 
         <!-- Botão Enviar -->
-        <button type="button" class="bg-[#6D3914] text-white px-8 py-3 rounded-xl hover:bg-[#4C2B08] uppercase text-sm font-semibold">
+        <button type="submit" class="relative z-50 bg-[#6D3914] text-white px-8 py-3 rounded-xl hover:bg-[#4C2B08] uppercase text-sm font-semibold">
             Enviar Mensagem
         </button>
     </form>
